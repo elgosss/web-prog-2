@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Горохова Елена</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main_1">
+            <script>
+                "use strict";
+                var lang = prompt('Введите название языка ("ru", "en", "fr", "de")');
+                try {
+                    switch (lang) {
+                    case "ru":
+                        alert('Полное название языка - "Русский"');
+                        break;
+                    case "en":
+                        alert('Полное название языка - "Английский"');
+                        break;
+                    case "fr":
+                        alert('Полное название языка - "Французски"');
+                        break;
+                    case "de":
+                        alert('Полное название языка - "Немецкий"');
+                        break;
+                    default:
+                        throw 'myException'; // создание исключения
+                    }
+                } catch {
+                    alert('Язык неизвестен');
+                }
+            </script>
+        </div>
+    </body>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Горохова Елена</title> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main_4">
+            <table>
+                <script>
+                    "use strict";
+                    for (let i = 0; i <= 9; i++) {
+                        document.write('<tr>');
+                            for (let j = 1; j <= 10; j++) {
+                                let p = 0;
+                                let ch = j + i * 10;
+                                for (let n = 1; n <= 14; n++) {
+                                    if (ch == n*(n + 1)/2) {
+                                        document.write('<td style="color:red">' + ch + '</td>');
+                                        p = 1;
+                                    }
+                                }
+                                if (p == 0) {
+                                    document.write('<td>' + ch + '</td>');
+                                }
+                            }
+                        document.write('</tr>');
+                    }  
+                </script>
+            </table>
+        </div>
+    </body>
+</html>
